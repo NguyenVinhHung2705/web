@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stype.css">
-    <title>Register</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stype.css" />
+    <title>Đăng ký</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="register">
-            <h1>Register</h1>
-            <form>
-                <label for="txtName">Your name</label>
-                <input type="text" id="txtName" placeholder="Your name" required>
-                <label for="txtphone">Phone number</label>
-                <input type="tel" id="txtphone" placeholder="Your phone number" required>
-                <label for="txtUserName">Username</label>
-                <input type="text" id="txtUserName" placeholder="user name" required>
-                <label for="txtPassword">Password</label>
-                <input type="password" id="txtPassword" placeholder="password" required>
-                <label for="txtPasswordagain">Password again</label>
-                <input type="password" id="txtPasswordagain" placeholder="password" required>
-            
-                <div class="btnLogin">
-                    <button type="submit">Regiter</button>
-                </div>
-            </form>
-            <div class="login_link">
-                <p>Already have an account? <a href="login.html">Login now</a></p>
-            </div>
+      <div class="register">
+        <h1>Đăng ký</h1>
+        <form>
+          <label for="txtName">Họ và tên</label>
+          <input
+            type="text"
+            id="txtName"
+            placeholder="Tên của bạn"
+            required
+            autocomplete="off"
+          />
+          <label for="txtphone">Số điện thoại</label>
+          <input
+            type="tel"
+            id="txtphone"
+            placeholder="Số điện thoại của bạn"
+            required
+            autocomplete="off"
+          />
+          <label for="txtUserName">Tài khoản</label>
+          <input
+            type="text"
+            id="txtUserName"
+            placeholder="Nhập tên tài khoản"
+            required
+            autocomplete="off"
+          />
+          <label for="txtPassword">Mật khẩu</label>
+          <input
+            type="password"
+            id="txtPassword"
+            placeholder="Nhập mật khẩu"
+            required
+            autocomplete="off"
+          />
+          <label for="txtPasswordagain">Xác nhận mật khẩu</label>
+          <input
+            type="password"
+            id="txtPasswordagain"
+            placeholder="Xác nhập mật khẩu"
+            required
+            autocomplete="off"
+          />
+
+          <div class="btnLogin">
+            <button type="submit">Đăng ký</button>
+          </div>
+        </form>
+        <div class="login_link">
+          <p>Đã có tài khoản <a href="login.html">Đăng nhập</a></p>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
