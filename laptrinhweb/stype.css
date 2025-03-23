@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
 }
 /* chỉnh màu chữ, xóa gạch chân của thẻ <a> */
 #service-list a{
@@ -26,6 +27,7 @@ body {
   transition: 0.1s;
   margin: 0 20px;
 }
+
 /* bo tròn quanh nút đăng nhập, đăng ký */
 .log-regis{
   padding: 5px 20px 5px 20px;
@@ -38,18 +40,79 @@ a:hover{
   cursor: url(imgs/hover.png), auto;
 }
 
-#container{
+.product-grid {
+  margin-top: 130px;
   display: grid;
-  margin-top: 200px;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 40px;
+  justify-content: center;
 }
 
-.item{
-  width: 100px;
-  height: 50px;
-  background-color: orange;
-  gap: 30px;
+.product {
+  background-image: url(imgs/bg-acc-of-list.webp);
+  background-size: cover;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
+
+.product img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid brown;
+  margin: 10px 0 0 0;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product p {
+  color: gray;
+  margin: 3px 0;
+}
+
+.product a{
+  display: block;
+  text-align: center;
+  background-image: url(imgs/btn_pretty.webp);
+  background-size: cover;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+  margin: 20px 20px;
+}
+
+#footer{
+  background-color: rgba(23,21,44, 0.48);
+  height: 130px;
+  width: 100%;
+  margin-top: 80px;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+#footer p{
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-left: 50px;
+  padding-right: 30px;
+  text-shadow: 1px 1px 5px #0ff, 3px 4px 10px #08f;
+}
+
+#copyright p {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px #0ff, 4px 4px 10px #08f;
+}
+
+
 
 
 
