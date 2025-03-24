@@ -36,8 +36,8 @@ body {
 }
 /* thay đổi hình dạng con chuột và làm cho chữ phát sáng */
 a:hover{
-  text-shadow: 0 0 25px #0ff, 0 0 50px #08f;
-  cursor: url(imgs/hover.png), auto;
+  text-shadow: 0 0 25px #0ff, 0 0 50px #08f !important;
+  cursor: url(imgs/hover.png), auto !important;
 }
 
 .product-grid {
